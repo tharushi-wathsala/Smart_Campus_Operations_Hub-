@@ -1,0 +1,306 @@
+.technician-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.technician-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.technician-header h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.025em;
+}
+
+.technician-header p {
+  color: #64748b;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.back-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  transition: all 0.2s;
+}
+
+.back-link:hover {
+  border-color: #3b82f6;
+  background-color: #f0f9ff;
+}
+
+.technician-state-card {
+  text-align: center;
+  padding: 5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  color: #64748b;
+  font-size: 1.2rem;
+  border: 1px solid #e2e8f0;
+}
+
+.technician-ticket-list, .ticket-list, .admin-ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.technician-ticket-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s;
+}
+
+.tech-ticket-badge-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.status-pill {
+  padding: 0.25rem 0.875rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-open { background-color: #fef3c7; color: #92400e; }
+.status-in_progress { background-color: #dbeafe; color: #1e40af; }
+.status-resolved { background-color: #dcfce7; color: #166534; }
+.status-closed { background-color: #f1f5f9; color: #475569; }
+.status-rejected { background-color: #fee2e2; color: #991b1b; }
+
+.priority-low { background-color: #f1f5f9; color: #475569; }
+.priority-medium { background-color: #e0f2fe; color: #0369a1; }
+.priority-high { background-color: #ffedd5; color: #9a3412; }
+.priority-urgent { background-color: #fee2e2; color: #991b1b; }
+
+.technician-ticket-head h3 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+}
+
+.ticket-details-box {
+  background-color: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #f1f5f9;
+  margin-bottom: 2rem;
+}
+
+.ticket-details-box p {
+  margin: 0.75rem 0;
+  color: #334155;
+  font-size: 1rem;
+}
+
+.ticket-details-box strong {
+  color: #64748b;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.resolution-display-box {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  background-color: #f0fdf4;
+  border-radius: 10px;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.resolution-display-box strong {
+  color: #166534;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.resolution-display-box p {
+  margin: 0;
+  color: #15803d;
+  font-style: italic;
+}
+
+.technician-status-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.status-action-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.875rem 1.75rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgb(59 130 246 / 0.2);
+}
+
+.status-action-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgb(59 130 246 / 0.3);
+}
+
+.status-action-btn.resolve-action {
+  background-color: #10b981;
+  box-shadow: 0 4px 6px -1px rgb(16 185 129 / 0.2);
+}
+
+.status-action-btn.resolve-action:hover {
+  background-color: #059669;
+  box-shadow: 0 10px 15px -3px rgb(16 185 129 / 0.3);
+}
+
+.status-action-btn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Filter Bar Styles */
+.ticket-filters-bar {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 2.5rem;
+  background: white;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.status-filters {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.search-and-priority {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex: 1;
+  max-width: 600px;
+}
+
+.tech-search-box {
+  flex: 1;
+}
+
+.tech-search-box input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.2s;
+  background: #f8fafc;
+}
+
+.tech-search-box input:focus {
+  border-color: #3b82f6;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.priority-select-filter {
+  padding: 0.6rem 1rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  background: white;
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.85rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1.25rem;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.filter-btn.active {
+  background: #0f172a;
+  border-color: #0f172a;
+  color: white;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.filter-count {
+  background: #e2e8f0;
+  color: #475569;
+  padding: 0.1rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.filter-btn.active .filter-count {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .ticket-filters-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-and-priority {
+    max-width: none;
+  }
+}
